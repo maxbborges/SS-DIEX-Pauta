@@ -13,22 +13,264 @@
 	<link href="/style-guide/css/fluig-style-guide-ratingstars.min.css" rel="stylesheet" type="text/css">
 	<script src="/style-guide/js/fluig-style-guide-filter.min.js"></script>
 	<script src="/style-guide/js/fluig-style-guide-ratingstars.min.js"></script>
-
+	<script type="text/javascript" src="/webdesk/vcXMLRPC.js" charset="utf-8"></script>
 	<link href='/webdesk/customresources?cid=1&resourceName=temaFormulario/0.css' type='text/css' rel='stylesheet' />
+
 	<script type="text/javascript" src="./custom/custom.js"></script>
 	<link href='./custom/custom.css' type='text/css' rel='stylesheet' />
+
+	<meta charset="utf-8">
+	</meta>
+	<link href='./custom/fluig-style-guide-flat.min.css' type='text/css' rel='stylesheet' />
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
 </head>
 
 <body class="fluig-style-guide">
 
 	<form class="totvs-form grid vertical create-form-components ui-sortable t0" name="createFormComponents"
 		style="padding-left: 10px; padding-right: 10px;">
-		<h1 class="title-form-application">Formulário de solicitacao_pauta_diex</h1>
-		<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="textbox0">
+		<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="solicitante">
 			<div class="form-input">
 				<div class="form-group">
-					<label>Label textbox</label>
-					<input type="text" class="form-control" name="textbox0" value="" placeholder="" data-size="big">
+					<input type="hidden" class="form-control" name="solicitante" value="" placeholder=""
+						data-size="big">
+				</div>
+			</div>
+		</div>
+		<h1 class="title-form-application">Solicitação de Pauta</h1>
+		<div class="panel panel-info" id="div_00">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<span class="flaticon flaticon-message icon-sm"></span>
+					Abertura
+				</h3>
+			</div>
+			<div id="abertura" class="panel-collapse collapse in">
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="form-field" data-type="radio" data-show-properties=""
+								data-field-name="rdDiretoria">
+								<div class="form-input">
+									<div class="form-group">
+										<label>Diretoria</label>
+										<div class="radio-options">
+											<div class="radio">
+												<label><input type="radio" name="rdDiretoria"
+														value="diretoria">Diretoria</label>
+											</div>
+											<div class="radio">
+												<label><input type="radio" name="rdDiretoria"
+														value="diretoria_executiva">Diretoria Executiva</label>
+											</div>
+											<div class="radio">
+												<label><input type="radio" name="rdDiretoria"
+														value="diretoria_adjunta">Diretoria Adjunta</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<div class="form-field" data-type="textarea" data-show-properties=""
+								data-field-name="taAssunto">
+								<div class="form-input">
+									<div class="form-group">
+										<label>Assunto</label>
+										<textarea class="form-control" rows="3" name="taAssunto"
+											placeholder="Digite o assunto" data-size="big"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">
+							<div class="form-field" data-type="radio" data-show-properties=""
+								data-field-name="rdPrioridade">
+								<div class="form-input">
+									<div class="form-group">
+										<label>Prioridade</label>
+										<div class="radio-options">
+											<div class="radio">
+												<label><input type="radio" name="rdPrioridade" value="alta">Alta</label>
+											</div>
+											<div class="radio">
+												<label><input type="radio" name="rdPrioridade"
+														value="media">Média</label>
+											</div>
+											<div class="radio">
+												<label><input type="radio" name="rdPrioridade"
+														value="baixa">Baixa</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="form-field" data-type="textbox" data-show-properties=""
+								data-field-name="ipRamal">
+								<div class="form-input">
+									<div class="form-group">
+										<label>Ramal</label>
+										<input type="text" class="form-control" name="ipRamal" value=""
+											placeholder="Digite o seu Ramal" data-size="big">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="form-field" data-type="textbox" data-show-properties=""
+								data-field-name="ipDataPauta">
+								<div class="form-input">
+									<div class="form-group">
+										<label>Data da pauta</label>
+										<input type="date" class="form-control" name="ipDataPauta" value=""
+											placeholder="" data-size="big">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-info" id="div_01">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<span class="flaticon flaticon-message icon-sm"></span>
+					Finalização de pauta
+				</h3>
+			</div>
+			<div id="finalizacao" class="panel-collapse collapse in">
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-field" data-type="tabledetail" data-show-properties=""
+								data-field-name="tbPauta">
+								<div class="form-input">
+									<div class="form-group">
+										<table tablename="tbPauta" class="table" noaddbutton="true">
+											<thead>
+												<tr class="tableHeadRow">
+													<th class="tableColumn">Para</th>
+													<th class="tableColumn">Solicitante</th>
+													<th class="tableColumn">Assunto</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="tableBodyRow">
+													<td class="fs-v-align-middle">
+														<div class="form-input">
+															<input type="text" name="column1_1" class="form-control">
+														</div>
+													</td>
+													<td class="fs-v-align-middle">
+														<div class="form-input">
+															<input type="text" name="column2_1" class="form-control">
+														</div>
+													</td>
+													<td class="fs-v-align-middle">
+														<div class="form-input">
+															<input type="text" name="column3_1" class="form-control">
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="form-field" data-type="textbox" data-show-properties=""
+								data-field-name="ipPrazo">
+								<div class="form-input">
+									<div class="form-group">
+										<label>Prazo</label>
+										<input type="date" class="form-control" name="ipPrazo" value="" placeholder=""
+											data-size="big">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class="form-field" data-type="textarea" data-show-properties=""
+								data-field-name="taObservacao">
+								<div class="form-input">
+									<div class="form-group">
+										<label>Observações</label>
+										<textarea class="form-control" rows="3" name="taObservacao"
+											placeholder="Digite as observações" data-size="big"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="form-field" data-type="radio" data-show-properties=""
+								data-field-name="rdNecessarioDevolutiva">
+								<div class="form-input">
+									<div class="form-group">
+										<label>Necessário Devolutiva?</label>
+										<div class="radio-options">
+											<div class="radio">
+												<label><input type="radio" name="rdNecessarioDevolutiva"
+														value="sim">Sim</label>
+											</div>
+											<div class="radio">
+												<label><input type="radio" name="rdNecessarioDevolutiva"
+														value="nao">Não</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="form-field" data-type="radio" data-show-properties=""
+								data-field-name="rdFinalizar">
+								<div class="form-input">
+									<div class="form-group">
+										<label>Finalizar Pauta?</label>
+										<div class="radio-options">
+											<div class="radio">
+												<label><input type="radio" name="rdFinalizar" value="sim">Sim</label>
+											</div>
+											<div class="radio">
+												<label><input type="radio" name="rdFinalizar" value="nao">Não</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-field" data-type="textarea" data-show-properties=""
+								data-field-name="taMotivos">
+								<div class="form-input">
+									<div class="form-group">
+										<label>Motivo</label>
+										<textarea class="form-control" rows="3" name="taMotivos"
+											placeholder="Digite o motivo" data-size="big"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
