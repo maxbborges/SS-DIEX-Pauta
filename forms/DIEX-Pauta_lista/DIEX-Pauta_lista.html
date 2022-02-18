@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css" />
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/webdesk/vcXMLRPC.js" charset="utf-8"></script>
+
+	<link href='/webdesk/customresources?cid=1&resourceName=temaFormulario/0.css' type='text/css' rel='stylesheet' />
+
+	<!-- <meta charset="utf-8">
+	</meta>
+	<link href='./custom/fluig-style-guide-flat.min.css' type='text/css' rel='stylesheet' />
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+		integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script> -->
+
+	<link href='./custom/custom.css' type='text/css' rel='stylesheet' />
+	<script type="text/javascript" src="./custom/custom.js"></script>
+</head>
+
+<body class="fluig-style-guide">
+	<form class="totvs-form grid vertical create-form-components ui-sortable t0" name="createFormComponents"
+		style="padding-left: 10px; padding-right: 10px;">
+		<h1 class="title-form-application">Lista de Pautas</h1>
+
+		<div class="panel panel-info" id="div_00">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<span class="flaticon flaticon-message icon-sm"></span>
+					Pautas
+				</h3>
+			</div>
+			<div id="pautas" class="panel-collapse collapse in">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-field" data-type="tabledetail" data-show-properties=""
+								data-field-name="tbPautas_div">
+								<div class="form-input">
+									<div class="form-group">
+										<table tablename="tbPautas" class="table" noaddbutton="true">
+											<thead>
+												<tr class="tableHeadRow">
+													<th class="tableColumn">Numero</th>
+													<th class="tableColumn">Para</th>
+													<th class="tableColumn">De</th>
+													<th class="tableColumn">Assunto</th>
+													<th class="tableColumn">Prioridade</th>
+													<th class="tableColumn">Data</th>
+													<th class="tableColumn">Cadastro</th>
+													<th class="tableColumn">Situação</th>
+													<th class="tableColumn">Links</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="tableBodyRow">
+													<td class="fs-v-align-middle">
+														<div class="form-input">
+															<input type="text" name="column1_1" class="form-control">
+														</div>
+													</td>
+													<td class="fs-v-align-middle">
+														<div class="form-input">
+															<input type="text" name="column2_1" class="form-control">
+														</div>
+													</td>
+													<td class="fs-v-align-middle">
+														<div class="form-input">
+															<input type="text" name="column3_1" class="form-control">
+														</div>
+													</td>
+													<td class="fs-v-align-middle">
+														<div class="form-input">
+															<input type="text" name="column4_1" class="form-control">
+														</div>
+													</td>
+													<td class="fs-v-align-middle">
+														<div class="form-input">
+															<input type="text" name="column5_1" class="form-control">
+														</div>
+													</td>
+													<td class="fs-v-align-middle">
+														<div class="form-input">
+															<input type="text" name="column6_1" class="form-control">
+														</div>
+													</td>
+													<td class="fs-v-align-middle">
+														<div class="form-input">
+															<input type="text" name="column7_1" class="form-control">
+														</div>
+													</td>
+													<td class="fs-v-align-middle">
+														<div class="form-input">
+															<input type="text" name="column8_1" class="form-control">
+														</div>
+													</td>
+													<td class="fs-v-align-middle">
+														<a target="_blank" name="column9_1">
+															<button type="button" class="btn btn-primary">Formulário</button>
+														</a>
+														<a target="_blank" name="column10_1">
+															<button type="button" class="btn btn-primary">Solicitação</button>
+														</a>
+														
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<button type="button" class="btn btn-primary" onclick="wdkAddChild('tbPautas')">Novo
+											Registro</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+
+</html>
