@@ -14,4 +14,5 @@ function displayFields(form, customHTML) {
     	form.setValue('ipCadastro',data.getDate()+'/'+mes+'/'+data.getFullYear());
     	form.setValue('ipSituacao',"Novo");
 	} 
+
 }

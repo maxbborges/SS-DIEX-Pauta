@@ -27,7 +27,7 @@
 		<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="solicitante">
 			<div class="form-input">
 				<div class="form-group">
-					<input type="text" class="form-control" name="solicitante" value="" placeholder=""
+					<input type="hidden" class="form-control" name="solicitante" value="" placeholder=""
 						data-size="big">
 				</div>
 			</div>
@@ -35,24 +35,21 @@
 		<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="ipCadastro">
 			<div class="form-input">
 				<div class="form-group">
-					<input type="text" class="form-control" name="ipCadastro" value="" placeholder=""
-						data-size="big">
+					<input type="hidden" class="form-control" name="ipCadastro" value="" placeholder="" data-size="big">
 				</div>
 			</div>
 		</div>
 		<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="ipSituacao">
 			<div class="form-input">
 				<div class="form-group">
-					<input type="text" class="form-control" name="ipSituacao" value="" placeholder=""
-						data-size="big">
+					<input type="hidden" class="form-control" name="ipSituacao" value="" placeholder="" data-size="big">
 				</div>
 			</div>
 		</div>
 		<div class="form-field" data-type="textbox" data-show-properties="" data-field-name="ipNumForm">
 			<div class="form-input">
 				<div class="form-group">
-					<input type="text" class="form-control" name="ipNumForm" value="" placeholder=""
-						data-size="big">
+					<input type="hidden" class="form-control" name="ipNumForm" value="" placeholder="" data-size="big">
 				</div>
 			</div>
 		</div>
@@ -80,11 +77,11 @@
 											</div>
 											<div class="radio">
 												<label><input type="radio" name="rdDiretoria"
-														value="diretoria_executiva">Diretoria Executiva</label>
+														value="diretoria_executiva">Diretora Executiva</label>
 											</div>
 											<div class="radio">
 												<label><input type="radio" name="rdDiretoria"
-														value="diretoria_adjunta">Diretoria Adjunta</label>
+														value="diretoria_adjunta">Diretor Adjunto</label>
 											</div>
 										</div>
 									</div>
@@ -140,17 +137,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-5">
-							<div class="form-field" data-type="textbox" data-show-properties=""
-								data-field-name="ipDataPauta">
-								<div class="form-input">
-									<div class="form-group">
-										<label>Data da pauta</label>
-										<input type="date" class="form-control" name="ipDataPauta" value=""
-											placeholder="" data-size="big">
-									</div>
-								</div>
-							</div>
+						<div class="col-sm-5 form-group">
+							<label>Prazo</label>
+							<input type="text" class="form-control" name="ipDataPauta" id="ipDataPauta" data-date="">
+
 						</div>
 					</div>
 				</div>
@@ -160,76 +150,45 @@
 			<div class="panel-heading">
 				<h3 class="panel-title">
 					<span class="flaticon flaticon-message icon-sm"></span>
+					Analise Secretaria Executiva
+				</h3>
+			</div>
+			<div id="movimentar" class="panel-collapse collapse in">
+				<div class="panel-body">
+					<div class="row form-group">
+						<div class="col-sm-2">
+							<label>Encaminhar para despacho?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_despachar" value="Sim">Sim - Despachar</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_despachar" value="Nao-corrigir">Não -
+										Corrigir</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_despachar" value="Nao-finalizar">Não -
+										Finalizar</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-10">
+							<label>Motivo</label>
+							<textarea class="form-control" rows="3" name="atxt_motivo" data-size="big"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-info" id="div_02">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<span class="flaticon flaticon-message icon-sm"></span>
 					Finalização de pauta
 				</h3>
 			</div>
 			<div id="finalizacao" class="panel-collapse collapse in">
 				<div class="panel-body">
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="form-field" data-type="tabledetail" data-show-properties=""
-								data-field-name="tbPauta_div">
-								<div class="form-input">
-									<div class="form-group">
-										<table tablename="tbPauta" class="table" noaddbutton="true">
-											<thead>
-												<tr class="tableHeadRow">
-													<th class="tableColumn">Para</th>
-													<th class="tableColumn">Solicitante</th>
-													<th class="tableColumn">Assunto</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr class="tableBodyRow">
-													<td class="fs-v-align-middle">
-														<div class="form-input">
-															<input type="text" name="column1_1" class="form-control">
-														</div>
-													</td>
-													<td class="fs-v-align-middle">
-														<div class="form-input">
-															<input type="text" name="column2_1" class="form-control">
-														</div>
-													</td>
-													<td class="fs-v-align-middle">
-														<div class="form-input">
-															<input type="text" name="column3_1" class="form-control">
-														</div>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-3">
-							<div class="form-field" data-type="textbox" data-show-properties=""
-								data-field-name="ipPrazo">
-								<div class="form-input">
-									<div class="form-group">
-										<label>Prazo</label>
-										<input type="date" class="form-control" name="ipPrazo" value="" placeholder=""
-											data-size="big">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-9">
-							<div class="form-field" data-type="textarea" data-show-properties=""
-								data-field-name="taObservacao">
-								<div class="form-input">
-									<div class="form-group">
-										<label>Observações</label>
-										<textarea class="form-control" rows="3" name="taObservacao"
-											placeholder="Digite as observações" data-size="big"></textarea>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 					<div class="row">
 						<div class="col-sm-3">
 							<div class="form-field" data-type="radio" data-show-properties=""
@@ -280,6 +239,38 @@
 									</div>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-info" id="div_03">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<span class="flaticon flaticon-message icon-sm"></span>
+					Criar Devolutiva
+				</h3>
+			</div>
+			<div id="movimentar" class="panel-collapse collapse in">
+				<!-- trocar o ID -->
+				<div class="panel-body">
+					<div class="row form-group">
+						<div class="col-sm-2">
+							<label>Devolutiva Criada?</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rd_devolutiva" value="Sim">Sim</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rd_devolutiva" value="Nao">Não</label>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-sm-10">
+							<label>Observações?</label>
+							<textarea class="form-control" rows="3" name="atxt_motivo_devolutiva" placeholder=""
+								data-size="big"></textarea>
 						</div>
 					</div>
 				</div>

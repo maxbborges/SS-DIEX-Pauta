@@ -16,14 +16,14 @@ function carregaTabelas(){
         console.log(linhasTabela)
 
         for(i=0;i<dataset.length;i++){
-            console.log(dataset[i])
+            console.log(dataset[i].ipDataPauta)
             wdkAddChild('tbPautas')
             $('[name="column1_1___'+(i+1)+'"]').text(i+1)
             $('[name="column2_1___'+(i+1)+'"]').text(dataset[i].rdDiretoria)
             $('[name="column3_1___'+(i+1)+'"]').text(dataset[i].solicitante)
             $('[name="column4_1___'+(i+1)+'"]').text(dataset[i].taAssunto)
             $('[name="column5_1___'+(i+1)+'"]').text(dataset[i].rdPrioridade)
-            $('[name="column6_1___'+(i+1)+'"]').text(dataset[i].ipPrazo)
+            $('[name="column6_1___'+(i+1)+'"]').text(dataset[i].ipDataPauta)
             $('[name="column7_1___'+(i+1)+'"]').text(dataset[i].ipCadastro)
             $('[name="column8_1___'+(i+1)+'"]').text(dataset[i].ipSituacao)
             $('#column9_1___'+(i+1)).prop('href','https://fluighom.sestsenat.org.br/portal/p/1/ecmnavigation?app_ecm_navigation_doc='+dataset[i].documentid)

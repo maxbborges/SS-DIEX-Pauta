@@ -1,0 +1,1946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_311" class="java.beans.XMLDecoder">
+ <object class="java.util.HashMap">
+  <void method="put">
+   <string>volume</string>
+   <array class="java.lang.String" length="1">
+    <void index="0">
+     <string>Default</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>expediente</string>
+   <array class="java.lang.String" length="12">
+    <void index="0">
+     <string>Andre</string>
+    </void>
+    <void index="1">
+     <string>Cícero Alex</string>
+    </void>
+    <void index="2">
+     <string>CONSTANCE ESCHER</string>
+    </void>
+    <void index="3">
+     <string>Default</string>
+    </void>
+    <void index="4">
+     <string>Fabio</string>
+    </void>
+    <void index="5">
+     <string>Joci</string>
+    </void>
+    <void index="6">
+     <string>Kátia</string>
+    </void>
+    <void index="7">
+     <string>Lombardi</string>
+    </void>
+    <void index="8">
+     <string>luciana</string>
+    </void>
+    <void index="9">
+     <string>Marcelo Britto Teste Expediente</string>
+    </void>
+    <void index="10">
+     <string>Trabalho</string>
+    </void>
+    <void index="11">
+     <string>Willian</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>camposFormulario, documentoId = 5463</string>
+   <array class="java.lang.String" length="16">
+    <void index="0">
+     <string>atxt_motivo</string>
+    </void>
+    <void index="1">
+     <string>atxt_motivo_devolutiva</string>
+    </void>
+    <void index="2">
+     <string>ipCadastro</string>
+    </void>
+    <void index="3">
+     <string>ipDataPauta</string>
+    </void>
+    <void index="4">
+     <string>ipNumForm</string>
+    </void>
+    <void index="5">
+     <string>ipRamal</string>
+    </void>
+    <void index="6">
+     <string>ipSituacao</string>
+    </void>
+    <void index="7">
+     <string>rd_despachar</string>
+    </void>
+    <void index="8">
+     <string>rd_devolutiva</string>
+    </void>
+    <void index="9">
+     <string>rdDiretoria</string>
+    </void>
+    <void index="10">
+     <string>rdFinalizar</string>
+    </void>
+    <void index="11">
+     <string>rdNecessarioDevolutiva</string>
+    </void>
+    <void index="12">
+     <string>rdPrioridade</string>
+    </void>
+    <void index="13">
+     <string>solicitante</string>
+    </void>
+    <void index="14">
+     <string>taAssunto</string>
+    </void>
+    <void index="15">
+     <string>taMotivos</string>
+    </void>
+   </array>
+  </void>
+  <void method="put">
+   <string>mecanismoPapel</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>admin</string>
+      </void>
+      <void property="roleId">
+       <string>admin</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>inex_assjur_distribuição</string>
+      </void>
+      <void property="roleId">
+       <string>inex_assjur_distribuicao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>inex_assjur_parecer_juridico</string>
+      </void>
+      <void property="roleId">
+       <string>inex_assjur_parecer_juridico</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>inex_assjur_aprovaçao_parecer</string>
+      </void>
+      <void property="roleId">
+       <string>inex_assjur_aprovacao_parecer</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>inex_assjur_revisao</string>
+      </void>
+      <void property="roleId">
+       <string>inex_assjur_revisao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>inex_assjur_elaborar_contrato</string>
+      </void>
+      <void property="roleId">
+       <string>inex_assjur_elaborar_contrato</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>inex_assjur_confirmação_dados</string>
+      </void>
+      <void property="roleId">
+       <string>inex_assjur_confirmacao_dados</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>inex_assjur_receber_cadastrar</string>
+      </void>
+      <void property="roleId">
+       <string>inex_assjur_receber_cadastrar</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>inex_compliance_analise_fornecedor</string>
+      </void>
+      <void property="roleId">
+       <string>inex_compliance_analise_fornecedor</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>inex_despacho_homologacao</string>
+      </void>
+      <void property="roleId">
+       <string>inex_despacho_homologacao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ADVOGADO_I_ASSJUR</string>
+      </void>
+      <void property="roleId">
+       <string>ADVOGADO_I_ASSJUR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ADVOGADO_II_ASSJUR</string>
+      </void>
+      <void property="roleId">
+       <string>ADVOGADO_II_ASSJUR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ADVOGADO_III_ASSJUR</string>
+      </void>
+      <void property="roleId">
+       <string>ADVOGADO_III_ASSJUR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_DE_COMPLIANCE_COMPLIANCE</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_DE_COMPLIANCE_COMPLIANCE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_I_GEAD</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_I_GEAD</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_I_GECOMP</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_I_GECOMP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_I_GECONT</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_I_GECONT</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_I_GEDES</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_I_GEDES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_I_GEREDE</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_I_GEREDE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_I_GERH</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_I_GERH</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_I_GESIS</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_I_GESIS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_II_DESPOLUIR</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_II_DESPOLUIR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_III_ASSJUR</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_III_ASSJUR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_III_COMPLIANCE</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_III_COMPLIANCE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_III_GEAD</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_III_GEAD</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_III_GECONT</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_III_GECONT</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_III_GEPES</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_III_GEPES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_III_GEPLAN</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_III_GEPLAN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_III_GEREDE</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_III_GEREDE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_III_GERH</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_III_GERH</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_JUNIOR_III_GETEC</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_JUNIOR_III_GETEC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_I_ASSJUR</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_I_ASSJUR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_I_DIEX</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_I_DIEX</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_I_GEAD</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_I_GEAD</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_I_GECOMP</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_I_GECOMP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_I_GECONT</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_I_GECONT</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_I_GEPES</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_I_GEPES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_I_GEREDE</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_I_GEREDE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_I_GETEC</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_I_GETEC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_II_GEAD</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_II_GEAD</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_II_GECOMP</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_II_GECOMP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_II_GECONT</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_II_GECONT</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_II_GEDES</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_II_GEDES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_II_GEPLAN</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_II_GEPLAN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_II_GEREDE</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_II_GEREDE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_II_GERH</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_II_GERH</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_II_GETEC</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_II_GETEC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_III_GEAD</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_III_GEAD</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_III_GECOMP</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_III_GECOMP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_III_GECONT</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_III_GECONT</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_III_GEDES</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_III_GEDES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_III_GEFIN</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_III_GEFIN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_III_GEOPE</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_III_GEOPE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_III_GEPAR</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_III_GEPAR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_III_GEPES</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_III_GEPES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_III_GEPLAN</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_III_GEPLAN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_III_GEPROM</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_III_GEPROM</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_III_GEREDE</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_III_GEREDE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_III_GERH</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_III_GERH</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_III_GESIS</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_III_GESIS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_PLENO_III_GETEC</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_PLENO_III_GETEC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_SENIOR_GEAUD</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_SENIOR_GEAUD</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_SENIOR_GECOMP</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_SENIOR_GECOMP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_SENIOR_GECONT</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_SENIOR_GECONT</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_SENIOR_GEENG</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_SENIOR_GEENG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_SENIOR_GEFIN</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_SENIOR_GEFIN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_SENIOR_GEPAR</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_SENIOR_GEPAR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_SENIOR_GEPES</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_SENIOR_GEPES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_SENIOR_GEPLAN</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_SENIOR_GEPLAN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_SENIOR_GEPROM</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_SENIOR_GEPROM</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_SENIOR_GEREDE</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_SENIOR_GEREDE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_SENIOR_GERH</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_SENIOR_GERH</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ANALISTA_SENIOR_GESIS</string>
+      </void>
+      <void property="roleId">
+       <string>ANALISTA_SENIOR_GESIS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ARQUITETO_GEENG</string>
+      </void>
+      <void property="roleId">
+       <string>ARQUITETO_GEENG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ASSESSOR_GEOPE</string>
+      </void>
+      <void property="roleId">
+       <string>ASSESSOR_GEOPE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ASSESSOR_CHEFE_JURIDICO_ASSJUR</string>
+      </void>
+      <void property="roleId">
+       <string>ASSESSOR_CHEFE_JURIDICO_ASSJUR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ASSESSOR_II_DESPOLUIR</string>
+      </void>
+      <void property="roleId">
+       <string>ASSESSOR_II_DESPOLUIR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ASSESSOR_III_DESPOLUIR</string>
+      </void>
+      <void property="roleId">
+       <string>ASSESSOR_III_DESPOLUIR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ASSESSOR_III_DIEX</string>
+      </void>
+      <void property="roleId">
+       <string>ASSESSOR_III_DIEX</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ASSISTENTE_TECNICO_GEAD</string>
+      </void>
+      <void property="roleId">
+       <string>ASSISTENTE_TECNICO_GEAD</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ASSISTENTE_TECNICO_GEOPE</string>
+      </void>
+      <void property="roleId">
+       <string>ASSISTENTE_TECNICO_GEOPE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ASSISTENTE_TECNICO_GEPROM</string>
+      </void>
+      <void property="roleId">
+       <string>ASSISTENTE_TECNICO_GEPROM</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ASSISTENTE_TECNICO_GERH</string>
+      </void>
+      <void property="roleId">
+       <string>ASSISTENTE_TECNICO_GERH</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-AUDITOR_AIP</string>
+      </void>
+      <void property="roleId">
+       <string>AUDITOR_AIP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-AUDITOR_GEAUD</string>
+      </void>
+      <void property="roleId">
+       <string>AUDITOR_GEAUD</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-AUDITOR_CHEFE_GEAUD</string>
+      </void>
+      <void property="roleId">
+       <string>AUDITOR_CHEFE_GEAUD</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-AUXILIAR_APRENDIZ_ASSJUR</string>
+      </void>
+      <void property="roleId">
+       <string>AUXILIAR_APRENDIZ_ASSJUR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-AUXILIAR_APRENDIZ_GEAD</string>
+      </void>
+      <void property="roleId">
+       <string>AUXILIAR_APRENDIZ_GEAD</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-AUXILIAR_APRENDIZ_GECOMP</string>
+      </void>
+      <void property="roleId">
+       <string>AUXILIAR_APRENDIZ_GECOMP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-AUXILIAR_APRENDIZ_GECONT</string>
+      </void>
+      <void property="roleId">
+       <string>AUXILIAR_APRENDIZ_GECONT</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-AUXILIAR_APRENDIZ_GEFIN</string>
+      </void>
+      <void property="roleId">
+       <string>AUXILIAR_APRENDIZ_GEFIN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-AUXILIAR_APRENDIZ_GEPES</string>
+      </void>
+      <void property="roleId">
+       <string>AUXILIAR_APRENDIZ_GEPES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-AUXILIAR_APRENDIZ_GEPROM</string>
+      </void>
+      <void property="roleId">
+       <string>AUXILIAR_APRENDIZ_GEPROM</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-CHEFE_DE_COMPLIANCE_COMPLIANCE</string>
+      </void>
+      <void property="roleId">
+       <string>CHEFE_DE_COMPLIANCE_COMPLIANCE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-CHEFE_DE_SEGURANCA_DA_INFORMACAO_SEGINF</string>
+      </void>
+      <void property="roleId">
+       <string>CHEFE_DE_SEGURANCA_DA_INFORMACAO_SEGINF</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-COORD_EXEC_DE_APERFEICOAMENTO_GERH</string>
+      </void>
+      <void property="roleId">
+       <string>COORD_EXEC_DE_APERFEICOAMENTO_GERH</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-COORD_EXEC_DE_ATRACAO_E_DESENVOLVIMENTO_GERH</string>
+      </void>
+      <void property="roleId">
+       <string>COORD_EXEC_DE_ATRACAO_E_DESENVOLVIMENTO_GERH</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-COORD_EXEC_DE_CONSULTIVO_E_CONTRATOS_ASSJUR</string>
+      </void>
+      <void property="roleId">
+       <string>COORD_EXEC_DE_CONSULTIVO_E_CONTRATOS_ASSJUR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-COORD_EXEC_DE_CONTABILIDADE_GECONT</string>
+      </void>
+      <void property="roleId">
+       <string>COORD_EXEC_DE_CONTABILIDADE_GECONT</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-COORD_EXEC_DE_CONTENCIOSO_ASSJUR</string>
+      </void>
+      <void property="roleId">
+       <string>COORD_EXEC_DE_CONTENCIOSO_ASSJUR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-COORD_EXEC_DE_DADOS_GEPLAN</string>
+      </void>
+      <void property="roleId">
+       <string>COORD_EXEC_DE_DADOS_GEPLAN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-COORD_EXEC_DE_EDUCACAO_PARA_EXECUTIVOS_GEDES</string>
+      </void>
+      <void property="roleId">
+       <string>COORD_EXEC_DE_EDUCACAO_PARA_EXECUTIVOS_GEDES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-COORD_EXEC_DE_EDUCACAO_PROFISSIONAL_GEDES</string>
+      </void>
+      <void property="roleId">
+       <string>COORD_EXEC_DE_EDUCACAO_PROFISSIONAL_GEDES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-COORD_EXEC_DE_LICITACOES_GECOMP</string>
+      </void>
+      <void property="roleId">
+       <string>COORD_EXEC_DE_LICITACOES_GECOMP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-COORD_EXEC_DE_OPERACOES_GEPROM</string>
+      </void>
+      <void property="roleId">
+       <string>COORD_EXEC_DE_OPERACOES_GEPROM</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-COORD_EXEC_DE_PERFORMANCE_GEPROM</string>
+      </void>
+      <void property="roleId">
+       <string>COORD_EXEC_DE_PERFORMANCE_GEPROM</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-COORD_EXEC_DE_PLANEJAMENTO_GEPLAN</string>
+      </void>
+      <void property="roleId">
+       <string>COORD_EXEC_DE_PLANEJAMENTO_GEPLAN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-COORD_EXEC_DE_PLANEJAMENTO_DE_COMPRAS_GECOMP</string>
+      </void>
+      <void property="roleId">
+       <string>COORD_EXEC_DE_PLANEJAMENTO_DE_COMPRAS_GECOMP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-COORD_EXEC_DE_SAUDE_E_SEGURANCA_DO_TRABALHO_GEPES</string>
+      </void>
+      <void property="roleId">
+       <string>COORD_EXEC_DE_SAUDE_E_SEGURANCA_DO_TRABALHO_GEPES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-DIRETOR_ADJUNTO_DIEX</string>
+      </void>
+      <void property="roleId">
+       <string>DIRETOR_ADJUNTO_DIEX</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-DIRETOR_EXECUTIVO_NACIONAL_DIEX</string>
+      </void>
+      <void property="roleId">
+       <string>DIRETOR_EXECUTIVO_NACIONAL_DIEX</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ENFERMEIRO_DO_TRABALHO_GEPES</string>
+      </void>
+      <void property="roleId">
+       <string>ENFERMEIRO_DO_TRABALHO_GEPES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-ENGENHEIRO_GEENG</string>
+      </void>
+      <void property="roleId">
+       <string>ENGENHEIRO_GEENG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-GERENTE_EXECUTIVO_GEAD</string>
+      </void>
+      <void property="roleId">
+       <string>GERENTE_EXECUTIVO_GEAD</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-GERENTE_EXECUTIVO_GECOMP</string>
+      </void>
+      <void property="roleId">
+       <string>GERENTE_EXECUTIVO_GECOMP</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-GERENTE_EXECUTIVO_GECONT</string>
+      </void>
+      <void property="roleId">
+       <string>GERENTE_EXECUTIVO_GECONT</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-GERENTE_EXECUTIVO_GEDES</string>
+      </void>
+      <void property="roleId">
+       <string>GERENTE_EXECUTIVO_GEDES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-GERENTE_EXECUTIVO_GEENG</string>
+      </void>
+      <void property="roleId">
+       <string>GERENTE_EXECUTIVO_GEENG</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-GERENTE_EXECUTIVO_GEFIN</string>
+      </void>
+      <void property="roleId">
+       <string>GERENTE_EXECUTIVO_GEFIN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-GERENTE_EXECUTIVO_GEOPE</string>
+      </void>
+      <void property="roleId">
+       <string>GERENTE_EXECUTIVO_GEOPE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-GERENTE_EXECUTIVO_GEPAR</string>
+      </void>
+      <void property="roleId">
+       <string>GERENTE_EXECUTIVO_GEPAR</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-GERENTE_EXECUTIVO_GEPES</string>
+      </void>
+      <void property="roleId">
+       <string>GERENTE_EXECUTIVO_GEPES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-GERENTE_EXECUTIVO_GEPLAN</string>
+      </void>
+      <void property="roleId">
+       <string>GERENTE_EXECUTIVO_GEPLAN</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-GERENTE_EXECUTIVO_GEPROM</string>
+      </void>
+      <void property="roleId">
+       <string>GERENTE_EXECUTIVO_GEPROM</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-GERENTE_EXECUTIVO_GEREDE</string>
+      </void>
+      <void property="roleId">
+       <string>GERENTE_EXECUTIVO_GEREDE</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-GERENTE_EXECUTIVO_GERH</string>
+      </void>
+      <void property="roleId">
+       <string>GERENTE_EXECUTIVO_GERH</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-GERENTE_EXECUTIVO_GESIS</string>
+      </void>
+      <void property="roleId">
+       <string>GERENTE_EXECUTIVO_GESIS</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-GERENTE_EXECUTIVO_GETEC</string>
+      </void>
+      <void property="roleId">
+       <string>GERENTE_EXECUTIVO_GETEC</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-MEDICO_DO_TRABALHO_GEPES</string>
+      </void>
+      <void property="roleId">
+       <string>MEDICO_DO_TRABALHO_GEPES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-SECRETARIA_EXECUTIVA_DIEX</string>
+      </void>
+      <void property="roleId">
+       <string>SECRETARIA_EXECUTIVA_DIEX</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-SECRETARIA_EXECUTIVA_GEAUD</string>
+      </void>
+      <void property="roleId">
+       <string>SECRETARIA_EXECUTIVA_GEAUD</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL-TECNICO_EM_SEGURANCA_DO_TRABALHO_GEPES</string>
+      </void>
+      <void property="roleId">
+       <string>TECNICO_EM_SEGURANCA_DO_TRABALHO_GEPES</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.WorkflowRoleDto">
+      <void property="companyId">
+       <long>1</long>
+      </void>
+      <void property="roleDescription">
+       <string>PAPEL_GERAL</string>
+      </void>
+      <void property="roleId">
+       <string>USUARIOS_DEX</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>mecanismo</string>
+   <array class="[Ljava.lang.Object;" length="10">
+    <void index="0">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Associação</string>
+      </void>
+      <void index="1">
+       <string>Associado</string>
+      </void>
+     </array>
+    </void>
+    <void index="1">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Campo de Formulário</string>
+      </void>
+      <void index="1">
+       <string>Campo Formulário</string>
+      </void>
+     </array>
+    </void>
+    <void index="2">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Executor de Atividade</string>
+      </void>
+      <void index="1">
+       <string>Executor Atividade</string>
+      </void>
+     </array>
+    </void>
+    <void index="3">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição campo formulario grupo</string>
+      </void>
+      <void index="1">
+       <string>formulario_grupo</string>
+      </void>
+     </array>
+    </void>
+    <void index="4">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Grupo</string>
+      </void>
+      <void index="1">
+       <string>Grupo</string>
+      </void>
+     </array>
+    </void>
+    <void index="5">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Grupos do Colaborador</string>
+      </void>
+      <void index="1">
+       <string>Grupos Colaborador</string>
+      </void>
+     </array>
+    </void>
+    <void index="6">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Papel</string>
+      </void>
+      <void index="1">
+       <string>Papel</string>
+      </void>
+     </array>
+    </void>
+    <void index="7">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição para um Grupo</string>
+      </void>
+      <void index="1">
+       <string>Pool Grupo</string>
+      </void>
+     </array>
+    </void>
+    <void index="8">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição para um Papel</string>
+      </void>
+      <void index="1">
+       <string>Pool Papel</string>
+      </void>
+     </array>
+    </void>
+    <void index="9">
+     <array class="java.lang.Object" length="2">
+      <void index="0">
+       <string>Atribuição por Usuário</string>
+      </void>
+      <void index="1">
+       <string>Usuário</string>
+      </void>
+     </array>
+    </void>
+   </array>
+  </void>
+ </object>
+</java>
