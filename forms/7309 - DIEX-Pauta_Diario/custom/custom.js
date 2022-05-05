@@ -17,25 +17,57 @@ function init(){
 
     var ano = data.getFullYear()
 
-    carregaTabelas(ano, mes, dia)
+    if (FORM_MODE=='VIEW'){
+        carregaTabelas(ano, mes, dia)
+    } else {
+        $('#tabelaSolicitantes').hide()
+        var mySimpleCalendar = FLUIGC.calendar('#txt_data',{
+            useCurrent: true,
+            language: 'pt-br',
+            pickDate: true,
+        });
+        dataAtual = new Date()
+        // mySimpleCalendar.setDate(dataAtual);
+    }
+
+    
 }
 
 function carregaTabelas(ano, mes, dia){
-
     var dataFormatada = ano+'-'+mes+'-'+dia
     var dataFormatadaBR = dia+'/'+mes+'/'+ano
+    var data = $('[name="txt_data"]').text()
+    var responsavel = $('[name="txt_responsavel"]').text()
+    var solicitante = $('[name="txt_cargo"]').text()
+    constraints=[]
 
-    constraints = [ 
-        DatasetFactory.createConstraint("ipDataPauta", dataFormatadaBR, dataFormatadaBR, ConstraintType.MUST)
-    ];
+    if (data!='' && data!='\xa0'){
+        constraints.push(DatasetFactory.createConstraint("ipDataPauta", data, data, ConstraintType.MUST))
+    }
+
+    if (responsavel!='' && responsavel!='\xa0' && responsavel!='Todos'){
+        constraints.push(DatasetFactory.createConstraint("rdDiretoria", responsavel, responsavel, ConstraintType.MUST))
+    }
+
+    if (solicitante!='' && solicitante!='\xa0'){
+        constraints.push(DatasetFactory.createConstraint("solicitante", solicitante, solicitante, ConstraintType.MUST))
+    }
+
+
+    console.log(constraints)
     let dataset = (DatasetFactory.getDataset("DSFormulariodesolicitacao_pauta_diex", null, constraints, null)).values
-
+    console.log(dataset)
+    if  (dataset.length==0){
+        FLUIGC.toast({
+            title: '',
+            message: 'Nenhum dado encontrado para esses filtros!',
+            type: 'danger'
+        });
+        throw "Modificar filtro"
+    }
     setTimeout(()=>{
-        
-        $('[name="txt_data"]').text(dataFormatadaBR)
-        $('[name="txt_responsavel"]').text(dataset[i].rdDiretoria)
-
         for(i=0;i<dataset.length;i++){
+            console.log(dataset[i])
             wdkAddChild('tbl_controle')
             $('[name="column1_1___'+(i+1)+'"]').text(dataset[i].solicitante)
             $('[name="column2_1___'+(i+1)+'"]').text(dataset[i].ipRamal)

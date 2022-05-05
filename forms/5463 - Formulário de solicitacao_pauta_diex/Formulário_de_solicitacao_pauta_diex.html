@@ -64,83 +64,52 @@
 			<div id="abertura" class="panel-collapse collapse in">
 				<div class="panel-body">
 					<div class="row">
-						<div class="col-sm-4">
-							<div class="form-field" data-type="radio" data-show-properties=""
-								data-field-name="rdDiretoria">
-								<div class="form-input">
-									<div class="form-group">
-										<label>Diretoria</label>
-										<div class="radio-options">
-											<div class="radio">
-												<label><input type="radio" name="rdDiretoria"
-														value="diretoria">Diretoria</label>
-											</div>
-											<div class="radio">
-												<label><input type="radio" name="rdDiretoria"
-														value="diretoria_executiva">Diretora Executiva</label>
-											</div>
-											<div class="radio">
-												<label><input type="radio" name="rdDiretoria"
-														value="diretoria_adjunta">Diretor Adjunto</label>
-											</div>
-										</div>
-									</div>
+						<div class="col-sm-2 form-group">
+							<label class="required">Responsável(is):</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rdDiretoria" value="Diretoria">Diretoria
+										(Ambos)</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rdDiretoria" value="Diretoria Executiva">Diretora
+										Executiva</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rdDiretoria" value="Diretoria Adjunta">Diretor
+										Adjunto</label>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-8">
-							<div class="form-field" data-type="textarea" data-show-properties=""
-								data-field-name="taAssunto">
-								<div class="form-input">
-									<div class="form-group">
-										<label>Assunto</label>
-										<textarea class="form-control" rows="3" name="taAssunto"
-											placeholder="Digite o assunto" data-size="big"></textarea>
-									</div>
-								</div>
-							</div>
+						<div class="col-sm-10 form-group">
+							<label class="required">Assunto</label>
+							<textarea class="form-control" rows="3" name="taAssunto" placeholder="Digite o assunto"
+								data-size="big"></textarea>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-2">
-							<div class="form-field" data-type="radio" data-show-properties=""
-								data-field-name="rdPrioridade">
-								<div class="form-input">
-									<div class="form-group">
-										<label>Prioridade</label>
-										<div class="radio-options">
-											<div class="radio">
-												<label><input type="radio" name="rdPrioridade" value="alta">Alta</label>
-											</div>
-											<div class="radio">
-												<label><input type="radio" name="rdPrioridade"
-														value="media">Média</label>
-											</div>
-											<div class="radio">
-												<label><input type="radio" name="rdPrioridade"
-														value="baixa">Baixa</label>
-											</div>
-										</div>
-									</div>
+						<div class="col-sm-2 form-group">
+							<label class="required">Prioridade</label>
+							<div class="radio-options">
+								<div class="radio">
+									<label><input type="radio" name="rdPrioridade" value="alta">Alta</label>
 								</div>
-							</div>
-						</div>
-						<div class="col-sm-5">
-							<div class="form-field" data-type="textbox" data-show-properties=""
-								data-field-name="ipRamal">
-								<div class="form-input">
-									<div class="form-group">
-										<label>Ramal</label>
-										<input type="text" class="form-control" name="ipRamal" value=""
-											placeholder="Digite o seu Ramal" data-size="big">
-									</div>
+								<div class="radio">
+									<label><input type="radio" name="rdPrioridade" value="media">Média</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="rdPrioridade" value="baixa">Baixa</label>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-5 form-group">
-							<label>Prazo</label>
+							<label>Ramal</label>
+							<input type="text" class="form-control" name="ipRamal" value=""
+								placeholder="Digite o seu Ramal" data-size="big">
+						</div>
+						<div class="col-sm-5 form-group">
+							<label class="required">Data da Pauta:</label>
 							<input type="text" class="form-control" name="ipDataPauta" id="ipDataPauta" data-date="">
-
 						</div>
 					</div>
 				</div>
@@ -157,23 +126,24 @@
 				<div class="panel-body">
 					<div class="row form-group">
 						<div class="col-sm-2">
-							<label>Encaminhar para despacho?</label>
+							<label class="required">Decisão:</label>
 							<div class="radio-options">
 								<div class="radio">
-									<label><input type="radio" name="rd_despachar" value="Sim">Sim - Despachar</label>
+									<label>
+										<input type="radio" name="rd_despachar" value="Sim">Para despacho</label>
 								</div>
 								<div class="radio">
-									<label><input type="radio" name="rd_despachar" value="Nao-corrigir">Não -
-										Corrigir</label>
+									<label>
+										<input type="radio" name="rd_despachar" value="Nao-corrigir">Corrigir/Remarcar</label>
 								</div>
 								<div class="radio">
-									<label><input type="radio" name="rd_despachar" value="Nao-finalizar">Não -
-										Finalizar</label>
+									<label>
+										<input type="radio" name="rd_despachar" value="Nao-finalizar">Finalizar</label>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-10">
-							<label>Motivo</label>
+							<label id="atxtMotivo">Motivo/Observações</label>
 							<textarea class="form-control" rows="3" name="atxt_motivo" data-size="big"></textarea>
 						</div>
 					</div>
@@ -184,7 +154,7 @@
 			<div class="panel-heading">
 				<h3 class="panel-title">
 					<span class="flaticon flaticon-message icon-sm"></span>
-					Finalização de pauta
+					Realização do agendamento
 				</h3>
 			</div>
 			<div id="finalizacao" class="panel-collapse collapse in">
@@ -195,14 +165,16 @@
 								data-field-name="rdNecessarioDevolutiva">
 								<div class="form-input">
 									<div class="form-group">
-										<label>Necessário Devolutiva?</label>
+										<label class="required">Necessário Devolutiva?</label>
 										<div class="radio-options">
 											<div class="radio">
-												<label><input type="radio" name="rdNecessarioDevolutiva"
+												<label>
+													<input type="radio" name="rdNecessarioDevolutiva"
 														value="sim">Sim</label>
 											</div>
 											<div class="radio">
-												<label><input type="radio" name="rdNecessarioDevolutiva"
+												<label>
+													<input type="radio" name="rdNecessarioDevolutiva"
 														value="nao">Não</label>
 											</div>
 										</div>
@@ -215,7 +187,7 @@
 								data-field-name="rdFinalizar">
 								<div class="form-input">
 									<div class="form-group">
-										<label>Finalizar Pauta?</label>
+										<label class="required">Finalizar Pauta?</label>
 										<div class="radio-options">
 											<div class="radio">
 												<label><input type="radio" name="rdFinalizar" value="sim">Sim</label>
@@ -256,7 +228,7 @@
 				<div class="panel-body">
 					<div class="row form-group">
 						<div class="col-sm-2">
-							<label>Devolutiva Criada?</label>
+							<label class="required">Devolutiva Criada?</label>
 							<div class="radio-options">
 								<div class="radio">
 									<label><input type="radio" name="rd_devolutiva" value="Sim">Sim</label>

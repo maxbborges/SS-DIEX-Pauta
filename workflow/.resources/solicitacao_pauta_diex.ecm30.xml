@@ -9,7 +9,7 @@
     <active>true</active>
     <publicProcess>false</publicProcess>
     <volumeId>Default</volumeId>
-    <categoryId></categoryId>
+    <categoryId>DIEX</categoryId>
     <managerEngineAllocationId></managerEngineAllocationId>
     <snapshotFrequency>0</snapshotFrequency>
     <baseDay>0</baseDay>
@@ -28,7 +28,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>solicitacao_pauta_diex</processId>
-      <version>9</version>
+      <version>12</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
     <formId>5463</formId>
@@ -443,7 +443,7 @@
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>false</inhibitTransfer>
       <periodId></periodId>
-      <stateType>0</stateType>
+      <stateType>6</stateType>
       <bpmnType>60</bpmnType>
       <signalId>0</signalId>
       <counterSign>false</counterSign>
@@ -458,7 +458,7 @@
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
         <expressionOrder>1</expressionOrder>
-        <version>9</version>
+        <version>12</version>
         <sequence>7</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -470,7 +470,7 @@
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
         <expressionOrder>2</expressionOrder>
-        <version>9</version>
+        <version>12</version>
         <sequence>7</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -482,7 +482,7 @@
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
         <expressionOrder>3</expressionOrder>
-        <version>9</version>
+        <version>12</version>
         <sequence>7</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -494,7 +494,7 @@
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
         <expressionOrder>1</expressionOrder>
-        <version>9</version>
+        <version>12</version>
         <sequence>14</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -506,7 +506,7 @@
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
         <expressionOrder>2</expressionOrder>
-        <version>9</version>
+        <version>12</version>
         <sequence>14</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -518,7 +518,7 @@
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
         <expressionOrder>1</expressionOrder>
-        <version>9</version>
+        <version>12</version>
         <sequence>24</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -530,7 +530,7 @@
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
         <expressionOrder>2</expressionOrder>
-        <version>9</version>
+        <version>12</version>
         <sequence>24</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -542,7 +542,7 @@
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
         <expressionOrder>1</expressionOrder>
-        <version>9</version>
+        <version>12</version>
         <sequence>28</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -554,7 +554,7 @@
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
         <expressionOrder>2</expressionOrder>
-        <version>9</version>
+        <version>12</version>
         <sequence>28</sequence>
       </conditionProcessStatePK>
       <condition></condition>
@@ -912,7 +912,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
-        <version>9</version>
+        <version>12</version>
         <linkSequence>6</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -923,7 +923,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
-        <version>9</version>
+        <version>12</version>
         <linkSequence>16</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -934,7 +934,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
-        <version>9</version>
+        <version>12</version>
         <linkSequence>16</linkSequence>
         <bendSequence>2</bendSequence>
       </processLinkBendPK>
@@ -945,7 +945,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
-        <version>9</version>
+        <version>12</version>
         <linkSequence>18</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -956,7 +956,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
-        <version>9</version>
+        <version>12</version>
         <linkSequence>21</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -967,7 +967,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
-        <version>9</version>
+        <version>12</version>
         <linkSequence>22</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -978,7 +978,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
-        <version>9</version>
+        <version>12</version>
         <linkSequence>29</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -989,7 +989,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
-        <version>9</version>
+        <version>12</version>
         <linkSequence>30</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -1000,7 +1000,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>solicitacao_pauta_diex</processId>
-        <version>9</version>
+        <version>12</version>
         <linkSequence>31</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>

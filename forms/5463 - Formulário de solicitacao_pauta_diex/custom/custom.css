@@ -13,3 +13,8 @@
 .panel.panel-info{
     border-color: #002060;
 }
+
+form label.required:after{
+    color: #FF0000;
+    content: " *";
+}
