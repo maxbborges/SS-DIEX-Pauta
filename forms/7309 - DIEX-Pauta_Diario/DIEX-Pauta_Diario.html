@@ -41,12 +41,27 @@
 							</select>
 						</div>
 						<div class="col-xs-4">
-							<label class="labelDestacado">Solicitante</label>
-							<select class="form-control" name="txt_cargo">
-								<option value=""></option>
-								<option value="Maxwell Borges Bezerra">Maxwell Borges Bezerra</option>
-								<option value="Fulano">Fulano</option>
-							</select>
+							<label class="labelDestacado" for="zoom">Solicitante</label>
+							<div class="form-input">
+								<input type="zoom" class="form-control" name="txt_cargo" data-zoom="{
+									'displayKey':'fullName',
+									'datasetId':'fluig_consulta_usuariosDoGrupo',
+									'maximumSelectionLength':'1',
+									'placeholder':'Escolha o solicitante',
+									'filterValues':'cdGrupo,_DGEA',
+									'fields':[{
+										'field':'fullName',
+										'label':'Nome',
+										'standard':'true',
+										'visible':'true'
+									},{
+										'field':'email',
+										'label':'E-mail',
+										'visible':'true'
+									}]
+								}">
+								<input type="hidden" name="NomeSolicitante" id="NomeSolicitante">
+							</div>
 						</div>
 						<div class="col-xs-4">
 							<label class="labelDestacado">Data</label>
@@ -115,7 +130,8 @@
 								data-field-name="atxt_assuntos">
 								<div class="form-input">
 									<div class="form-group">
-										<label class="labelDestacado">Assuntos Pendentes com Gerentes e Coordenadores</label>
+										<label class="labelDestacado">Assuntos Pendentes com Gerentes e
+											Coordenadores</label>
 										<textarea class="form-control" rows="5" name="atxt_assuntos" placeholder=""
 											data-size="big"></textarea>
 									</div>

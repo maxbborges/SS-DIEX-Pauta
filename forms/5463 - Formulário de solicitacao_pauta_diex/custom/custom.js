@@ -29,6 +29,7 @@ function init(){
     }
 
     if (ATIVIDADE==9){
+    	$('[data-field-name="rdFinalizar"]').hide()
         $('#div_03').hide()
     }
 
@@ -38,6 +39,12 @@ function init(){
             $('#div_02').hide()
         }
         $('#div_03').hide()
+    }
+    
+    if (ATIVIDADE==23){
+        if (FORM_MODE=='VIEW'){
+        	$('#btnAbrirDespacho').hide()
+        }
     }
 }
 
@@ -49,4 +56,17 @@ function carregarOnchange(){
             $('#atxtMotivo').removeClass('required')
         }
     })
+    
+    $('[name="rdNecessarioDevolutiva"]').on('change',function(){
+        if($(this).filter(':checked').val()=='sim'){
+        	$('[data-field-name="rdFinalizar"]').hide()
+        } else {
+        	$('[data-field-name="rdFinalizar"]').show()
+        }
+    })
+}
+
+function abrirDespacho(){
+    link='https://fluighom.sestsenat.org.br/portal/p/1/pageworkflowview?processID=solicitacao_devolutiva_diex'
+    window.open(link, '_blank');
 }
