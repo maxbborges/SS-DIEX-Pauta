@@ -11,7 +11,7 @@ function displayFields(form, customHTML) {
 
 	if(activity==0||activity==4){
 		form.setValue('solicitante',usuario.getFullName());
-    	form.setValue('ipCadastro',data.getDate()+'/'+mes+'/'+data.getFullYear());
+    	// form.setValue('ipCadastro',data.getDate()+'/'+mes+'/'+data.getFullYear());
     	form.setValue('ipSituacao',"Novo");
 	} 
 

@@ -13,6 +13,10 @@ function validateForm(form) {
         if (form.getValue('taAssunto') == null || form.getValue('taAssunto') == ""){
             exibirMensagem("Necessário descrever o assunto")
         }
+
+        if (form.getValue('ipRamal') == null || form.getValue('ipRamal') == ""){
+            exibirMensagem("Necessário preencher o Ramal")
+        }
     }
 
     if (wkactivity==5){
@@ -26,18 +30,18 @@ function validateForm(form) {
     }
 
     if (wkactivity==9){
-        if (form.getValue('rdNecessarioDevolutiva') == null || form.getValue('rdNecessarioDevolutiva') == ""){
-            exibirMensagem("Necessário informar se há necessidade de devolutiva!")
-        }
+        // if (form.getValue('rdNecessarioDevolutiva') == null || form.getValue('rdNecessarioDevolutiva') == ""){
+        //     exibirMensagem("Necessário informar se há necessidade de devolutiva!")
+        // }
         if (form.getValue('rdFinalizar') == null && form.getValue('rdFinalizar')==''){
             exibirMensagem("Necessário informar se pode finalizar a solicitação!")
         }
     }
 
     if (wkactivity==23){
-        if (form.getValue('rd_devolutiva') == null || form.getValue('rd_devolutiva') == ""){
-            exibirMensagem("Necessário informar se a devolutiva foi criada e se possível, informar o numero da mesma!")
-        }
+        // if (form.getValue('rd_devolutiva') == null || form.getValue('rd_devolutiva') == ""){
+        //     exibirMensagem("Necessário informar se a devolutiva foi criada e se possível, informar o numero da mesma!")
+        // }
     }
 
     if (wkactivity==20){

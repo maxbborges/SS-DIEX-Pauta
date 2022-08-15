@@ -1,12 +1,6 @@
 $(document).ready(function () {
-    init();
+    carregaTabelas();
 });
-
-function init(){
-    carregaTabelas()
-    console.log("OK")
-
-}
 
 function carregaTabelas(){
     let dataset = (DatasetFactory.getDataset("DSFormulariodesolicitacao_pauta_diex", null, null, null)).values
@@ -14,12 +8,22 @@ function carregaTabelas(){
     setTimeout(()=>{
         var linhasTabela = $('.table tbody tr');
         console.log(linhasTabela)
+        var diretoria=dataset[i].rdDiretoria
+        if (diretoria=='Diretoria'){diretoria="Ambos"}
+        else if (diretoria=='Diretoria Executiva'){diretoria="Diretora"}
+        else if (diretoria=='Diretoria Adjunta'){diretoria="Diretor"}
+
+        constraints=[DatasetFactory.createConstraint("processTaskPK.processInstanceId", dataset[i].ipNumForm, dataset[i].ipNumForm, ConstraintType.MUST)]
+        let status = (DatasetFactory.getDataset("processTask", ['status','processTaskPK.colleagueId'], constraints, null)).values
+        if(status[status.length-1].status==4){
+            dataset[i].ipSituacao='Cancelado'
+        }
 
         for(i=0;i<dataset.length;i++){
             console.log(dataset[i].ipDataPauta)
             wdkAddChild('tbPautas')
             $('[name="column1_1___'+(i+1)+'"]').text(i+1)
-            $('[name="column2_1___'+(i+1)+'"]').text(dataset[i].rdDiretoria)
+            $('[name="column2_1___'+(i+1)+'"]').text(diretoria)
             $('[name="column3_1___'+(i+1)+'"]').text(dataset[i].solicitante)
             $('[name="column4_1___'+(i+1)+'"]').text(dataset[i].taAssunto)
             $('[name="column5_1___'+(i+1)+'"]').text(dataset[i].rdPrioridade)

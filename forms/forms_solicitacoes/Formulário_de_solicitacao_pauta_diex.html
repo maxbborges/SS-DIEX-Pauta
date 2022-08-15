@@ -15,8 +15,11 @@
 	<script src="/style-guide/js/fluig-style-guide-ratingstars.min.js"></script>
 	<script type="text/javascript" src="/webdesk/vcXMLRPC.js" charset="utf-8"></script>
 	<link href='/webdesk/customresources?cid=1&resourceName=temaFormulario/0.css' type='text/css' rel='stylesheet' />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
 
 	<script type="text/javascript" src="./custom/custom.js"></script>
+	<script type="text/javascript" src="./custom/functionsCustom.js"></script>
 	<link href='./custom/custom.css' type='text/css' rel='stylesheet' />
 </head>
 
@@ -53,7 +56,9 @@
 				</div>
 			</div>
 		</div>
-		<h1 class="title-form-application">Solicitação de Pauta</h1>
+		<div class="row"><div class='col-sm-12' style='text-align:center'><h1 class="title-form-application">Solicitação de Pauta</h1></div></div>
+		
+		
 		<div class="panel panel-info" id="div_00">
 			<div class="panel-heading">
 				<h3 class="panel-title">
@@ -68,16 +73,13 @@
 							<label class="required">Responsável(is):</label>
 							<div class="radio-options">
 								<div class="radio">
-									<label><input type="radio" name="rdDiretoria" value="Diretoria">Diretoria
-										(Ambos)</label>
+									<label><input type="radio" name="rdDiretoria" value="Diretoria">Ambos</label>
 								</div>
 								<div class="radio">
-									<label><input type="radio" name="rdDiretoria" value="Diretoria Executiva">Diretora
-										Executiva</label>
+									<label><input type="radio" name="rdDiretoria" value="Diretoria Executiva">Diretora</label>
 								</div>
 								<div class="radio">
-									<label><input type="radio" name="rdDiretoria" value="Diretoria Adjunta">Diretor
-										Adjunto</label>
+									<label><input type="radio" name="rdDiretoria" value="Diretoria Adjunta">Diretor</label>
 								</div>
 							</div>
 						</div>
@@ -103,13 +105,12 @@
 							</div>
 						</div>
 						<div class="col-sm-5 form-group">
-							<label>Ramal</label>
-							<input type="text" class="form-control" name="ipRamal" value=""
-								placeholder="Digite o seu Ramal" data-size="big">
+							<label class="required">Ramal</label>
+							<input type="number" class="form-control" name="ipRamal" placeholder="Digite o seu Ramal">
 						</div>
 						<div class="col-sm-5 form-group">
 							<label class="required">Data da Pauta:</label>
-							<input type="text" class="form-control" name="ipDataPauta" id="ipDataPauta" data-date="">
+							<input type="text" class="form-control date" name="ipDataPauta" id="ipDataPauta">
 						</div>
 					</div>
 				</div>
@@ -154,7 +155,7 @@
 			<div class="panel-heading">
 				<h3 class="panel-title">
 					<span class="flaticon flaticon-message icon-sm"></span>
-					Realização do agendamento
+					Controle do despacho
 				</h3>
 			</div>
 			<div id="finalizacao" class="panel-collapse collapse in">
@@ -162,50 +163,31 @@
 					<div class="row">
 						<div class="col-sm-3">
 							<div class="form-field" data-type="radio" data-show-properties=""
-								data-field-name="rdNecessarioDevolutiva">
-								<div class="form-input">
-									<div class="form-group">
-										<label class="required">Necessário Devolutiva?</label>
-										<div class="radio-options">
-											<div class="radio">
-												<label>
-													<input type="radio" name="rdNecessarioDevolutiva"
-														value="sim">Sim</label>
-											</div>
-											<div class="radio">
-												<label>
-													<input type="radio" name="rdNecessarioDevolutiva"
-														value="nao">Não</label>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-3">
-							<div class="form-field" data-type="radio" data-show-properties=""
 								data-field-name="rdFinalizar">
 								<div class="form-input">
 									<div class="form-group">
-										<label class="required">Finalizar Pauta?</label>
+										<label class="required">Despacho realizado?</label>
 										<div class="radio-options">
 											<div class="radio">
-												<label><input type="radio" name="rdFinalizar" value="sim">Sim</label>
+												<label><input type="radio" name="rdFinalizar" value="sim">Sim, Finalizar.</label>
 											</div>
 											<div class="radio">
-												<label><input type="radio" name="rdFinalizar" value="nao">Não</label>
+												<label><input type="radio" name="rdFinalizar" value="simDevolutiva">Sim, Abrir Devolutiva</label>
+											</div>
+											<div class="radio">
+												<label><input type="radio" name="rdFinalizar" value="nao">Não, Deixar em Aberto</label>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-sm-9">
 							<div class="form-field" data-type="textarea" data-show-properties=""
 								data-field-name="taMotivos">
 								<div class="form-input">
 									<div class="form-group">
-										<label>Motivo</label>
+										<label>Justificativa</label>
 										<textarea class="form-control" rows="3" name="taMotivos"
 											placeholder="Digite o motivo" data-size="big"></textarea>
 									</div>
@@ -228,21 +210,10 @@
 				<div class="panel-body">
 					<div class="row form-group">
 						<div class="col-sm-2">
-							<label class="required">Devolutiva Criada?</label>
-							<div class="radio-options">
-								<div class="radio">
-									<label><input type="radio" name="rd_devolutiva" value="Sim">Sim</label>
-								</div>
-								<div class="radio">
-									<label><input type="radio" name="rd_devolutiva" value="Nao">Não</label>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-2">
 							<a id="btnAbrirDespacho"><button type="button" class="btn btn-primary"
 								onclick="abrirDespacho()">Abri Devolutiva</button></a>
 						</div>
-						<div class="col-sm-8">
+						<div class="col-sm-10">
 							<label>Observações?</label>
 							<textarea class="form-control" rows="3" name="atxt_motivo_devolutiva" placeholder=""
 								data-size="big"></textarea>
