@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 function init(){
     var data = new Date();
-
+    
 	var mes = (data.getMonth()+1);
     if (mes<=9){
         mes = '0'+mes;
@@ -62,8 +62,8 @@ function carregaTabelas(ano, mes, dia){
     } else if (slc_status=='Finalizado'){
         constraints.push(DatasetFactory.createConstraint("ipSituacao", 'Finalizado', 'Finalizado', ConstraintType.MUST))
     }
-    
-    let dataset = (DatasetFactory.getDataset("DSFormulariodesolicitacao_pauta_diex", null, constraints, null)).values
+
+    let dataset = (DatasetFactory.getDataset("DSSolicitacaoDePauta", null, constraints, null)).values
     if  (dataset.length==0){
         FLUIGC.toast({
             title: '',
@@ -74,6 +74,7 @@ function carregaTabelas(ano, mes, dia){
     }
     setTimeout(()=>{
         for(i=0;i<dataset.length;i++){
+            console.log(dataset)
             constraints=[DatasetFactory.createConstraint("processTaskPK.processInstanceId", dataset[i].ipNumForm, dataset[i].ipNumForm, ConstraintType.MUST)]
             let status = (DatasetFactory.getDataset("processTask", ['status','processTaskPK.colleagueId'], constraints, null)).values
             if(status[status.length-1].status==4){
