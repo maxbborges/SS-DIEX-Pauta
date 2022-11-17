@@ -14,28 +14,23 @@
 	<script src="/style-guide/js/fluig-style-guide-ratingstars.min.js"></script>
 	<link href="/webdesk/customresources?cid=1&resourceName=temaFormulario/0.css" type="text/css" rel="stylesheet" />
 
-	<link href="./custom/custom.css" type="text/css" rel="stylesheet" />
-	<script type="text/javascript" src="./custom/custom.js"></script>
+	<link href="./custom.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="./custom.js"></script>
 </head>
 
 <body class="fluig-style-guide">
 	<form class="totvs-form grid vertical create-form-components ui-sortable t0" name="createFormComponents"
 		style="padding-left: 10px; padding-right: 10px;">
-		<div class="row"><div class='col-sm-12' style='text-align:center'><img id="img_logoEmpresa" style='width: 350px;' src="./custom/sslogo.png"/></div></div>
+		<div class="row"><div class='col-sm-12' style='text-align:center'><img id="img_logoEmpresa" style='width: 350px;' src="./sslogo.png"/></div></div>
 
 		<div class="panel panel-info" id="div_00">
-			<!-- <div class="panel-heading">
-				<h3 class="panel-title">
-					<span class="flaticon flaticon-message icon-sm"></span>
-					Pautas Diárias
-				</h3>
-			</div> -->
 			<div id="sestSenatForm" class="panel-collapse collapse in">
 				<div class="panel-body">
 					<div class="form-group row" id="infoDestinatario">
 						<div class="col-xs-2">
 							<label class="labelDestacado">Responsável</label>
 							<select class="form-control" name="txt_responsavel">
+								<option value="Todos">Todos</option>
 								<option value="Diretoria">Diretora e Diretor</option>
 								<option value="Diretoria Executiva">Diretora</option>
 								<option value="Diretoria Adjunta">Diretor</option>
@@ -98,8 +93,8 @@
 											<input type="text" name="column1_1" class="form-control">
 										</td>
 										<td class="col-sm-1">
-											<label>Ramal</label>
-											<input type="text" name="column2_1" class="form-control">
+											<label>Despachar com:</label>
+											<input type="text" name="column6_1" class="form-control">
 										</td>
 										<td class="col-sm-1">
 											<label>Agenda</label>
@@ -164,6 +159,7 @@
 				</div>
 			</div>
 		</div>
+		<input type="text" name="column2_1" class="form-control">
 	</form>
 </body>
 

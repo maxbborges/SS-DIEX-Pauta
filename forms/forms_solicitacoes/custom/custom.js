@@ -33,7 +33,6 @@ function init(){
     }
 
     if (ATIVIDADE==9){
-    	// $('[data-field-name="rdFinalizar"]').hide()
         $('#div_03').hide()
     }
 
@@ -60,17 +59,35 @@ function carregarOnchange(){
             $('#atxtMotivo').removeClass('required')
         }
     })
-    
-    // $('[name="rdNecessarioDevolutiva"]').on('change',function(){
-    //     if($(this).filter(':checked').val()=='sim'){
-    //     	$('[data-field-name="rdFinalizar"]').hide()
-    //     } else {
-    //     	$('[data-field-name="rdFinalizar"]').show()
-    //     }
-    // })
 }
 
 function abrirDespacho(){
-    link='https://fluighom.sestsenat.org.br/portal/p/1/pageworkflowview?processID=solicitacao_devolutiva_diex'
+    link='https://fluig.sestsenat.org.br/portal/p/1/pageworkflowview?processID=SolicitacaoDeDevolutiva'
+    // link='https://fluighom.sestsenat.org.br/portal/p/1/pageworkflowview?processID=solicitacao_devolutiva_diex'
     window.open(link, '_blank');
+}
+
+function addParticipante(field){
+    console.log(field)
+    var num = wdkAddChild('tb_00_Participantes');
+
+    $('[name="txt_00_nome1___'+num+'"]').val($('[name="txt_00_nome"]').val())
+    $('[name="txt_00_email1___'+num+'"]').val($('[name="txt_00_email"]').val())
+
+    window['zf_00_participantes'].clear();
+    $('[name="txt_00_nome"]').val('')
+    $('[name="txt_00_email"]').val('')
+}
+
+
+function setSelectedZoomItem(selectedItem) {
+    $('[name="txt_00_nome"]').val(selectedItem['Nome'])
+    $('[name="txt_00_email"]').val(selectedItem['Funcao'])
+    console.log(selectedItem)
+}
+
+function removedZoomItem(removedItem) {
+    $('[name="txt_00_nome"]').val('')
+    $('[name="txt_00_email"]').val('')
+    console.log(removedItem)
 }

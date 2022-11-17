@@ -16,7 +16,7 @@
 	<script type="text/javascript" src="/webdesk/vcXMLRPC.js" charset="utf-8"></script>
 	<link href='/webdesk/customresources?cid=1&resourceName=temaFormulario/0.css' type='text/css' rel='stylesheet' />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
 
 	<script type="text/javascript" src="./custom/custom.js"></script>
 	<script type="text/javascript" src="./custom/functionsCustom.js"></script>
@@ -56,9 +56,13 @@
 				</div>
 			</div>
 		</div>
-		<div class="row"><div class='col-sm-12' style='text-align:center'><h1 class="title-form-application">Solicitação de Pauta</h1></div></div>
-		
-		
+		<div class="row">
+			<div class='col-sm-12' style='text-align:center'>
+				<h1 class="title-form-application">Solicitação de Pauta</h1>
+			</div>
+		</div>
+
+
 		<div class="panel panel-info" id="div_00">
 			<div class="panel-heading">
 				<h3 class="panel-title">
@@ -76,10 +80,12 @@
 									<label><input type="radio" name="rdDiretoria" value="Diretoria">Ambos</label>
 								</div>
 								<div class="radio">
-									<label><input type="radio" name="rdDiretoria" value="Diretoria Executiva">Diretora</label>
+									<label><input type="radio" name="rdDiretoria"
+											value="Diretoria Executiva">Diretora</label>
 								</div>
 								<div class="radio">
-									<label><input type="radio" name="rdDiretoria" value="Diretoria Adjunta">Diretor</label>
+									<label><input type="radio" name="rdDiretoria"
+											value="Diretoria Adjunta">Diretor</label>
 								</div>
 							</div>
 						</div>
@@ -113,6 +119,63 @@
 							<input type="text" class="form-control date" name="ipDataPauta" id="ipDataPauta">
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<label>Selecione um colaborador</label>
+							<input type="zoom" class="form-control" name="zf_00_participantes" data-zoom="{
+								'datasetId':'ds_protheus_gerentesAssessores',
+								'displayKey':'Nome',
+								'maximumSelectionLength':'1',
+								'placeholder':'Selecione um colaborador',
+								'fields':[{
+									'field':'Nome',
+									'label':'Nome',
+									'visible':'true'
+								},{
+									'field':'Funcao',
+									'label':'Função',
+									'visible':'true'
+								}]
+							}">
+						</div>
+						<div class="col-sm-3">
+							<label>Nome</label>
+							<input type="text" name="txt_00_nome" class="form-control" readonly>
+						</div>
+						<div class="col-sm-3">
+							<label>Função</label>
+							<input type="text" name="txt_00_email" class="form-control" readonly>
+						</div>
+						<div class="col-sm-2">
+							<button type="button" class="btn btn-primary btnadd" onclick="addParticipante(this)">
+								Incluir Participante
+							</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<table tablename="tb_00_Participantes" class="table" noaddbutton="true" nodeletebutton="true">
+								<thead>
+									<tr class="tableHeadRow"></tr>
+								</thead>
+								<tbody>
+									<tr class="tableBodyRow form-input row">
+										<td class="col-sm-1" style='text-align:center;'>
+											<i class="fluigicon fluigicon-trash fluigicon-md" onclick="Javascript:fnWdkRemoveChild(this)" style="cursor:pointer;padding-top: 11%;"></i>
+										</td>
+										<td class="col-sm-6">
+											<label>Nome</label>
+											<input type="text" name="txt_00_nome1" class="form-control" readonly>
+										</td>
+										<td class="col-sm-5">
+											<label>Função</label>
+											<input type="text" name="txt_00_email1" class="form-control" readonly>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -135,7 +198,8 @@
 								</div>
 								<div class="radio">
 									<label>
-										<input type="radio" name="rd_despachar" value="Nao-corrigir">Corrigir/Remarcar</label>
+										<input type="radio" name="rd_despachar"
+											value="Nao-corrigir">Corrigir/Remarcar</label>
 								</div>
 								<div class="radio">
 									<label>
@@ -169,13 +233,16 @@
 										<label class="required">Despacho realizado?</label>
 										<div class="radio-options">
 											<div class="radio">
-												<label><input type="radio" name="rdFinalizar" value="sim">Sim, Finalizar.</label>
+												<label><input type="radio" name="rdFinalizar" value="sim">Sim,
+													Finalizar.</label>
 											</div>
 											<div class="radio">
-												<label><input type="radio" name="rdFinalizar" value="simDevolutiva">Sim, Abrir Devolutiva</label>
+												<label><input type="radio" name="rdFinalizar" value="simDevolutiva">Sim,
+													Abrir Devolutiva</label>
 											</div>
 											<div class="radio">
-												<label><input type="radio" name="rdFinalizar" value="nao">Não, Deixar em Aberto</label>
+												<label><input type="radio" name="rdFinalizar" value="nao">Não, Deixar em
+													Aberto</label>
 											</div>
 										</div>
 									</div>
@@ -211,7 +278,7 @@
 					<div class="row form-group">
 						<div class="col-sm-2">
 							<a id="btnAbrirDespacho"><button type="button" class="btn btn-primary"
-								onclick="abrirDespacho()">Abri Devolutiva</button></a>
+									onclick="abrirDespacho()">Abri Devolutiva</button></a>
 						</div>
 						<div class="col-sm-10">
 							<label>Observações?</label>
